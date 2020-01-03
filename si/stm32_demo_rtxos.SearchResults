@@ -1,0 +1,7 @@
+---- osThreadNew Matches (6 in 3 files) ----
+cmsis_os2.h (C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.5.1\CMSIS\RTOS2\Include):osThreadId_t osThreadNew (osThreadFunc_t func, void *argument, const osThreadAttr_t *attr);
+main.c (F:\stmcu\stm32f103_demo\stm32_demo_rtxos\user):    thread_main = osThreadNew(thread_main_cb, "main", &thread1_attr);    // Create thread with statically allocated stack memory
+main.c (F:\stmcu\stm32f103_demo\stm32_demo_rtxos\user):    thread_uart_msg = osThreadNew(thread_uart_cb, "uart", &thread2_attr);    // Create thread with statically allocated stack memory
+main.c (F:\stmcu\stm32f103_demo\stm32_demo_rtxos\user):    thread_app = osThreadNew(thread_app_cb, "app_m", &thread3_attr);    // Create thread with statically allocated stack memory
+main.c (F:\stmcu\stm32f103_demo\stm32_demo_rtxos\user):    osThreadNew(app_main, NULL, NULL);    // Create application main thread
+rtx_thread.c (C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.5.1\CMSIS\RTOS2\RTX\Source):osThreadId_t osThreadNew (osThreadFunc_t func, void *argument, const osThreadAttr_t *attr) {
