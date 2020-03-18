@@ -1300,6 +1300,13 @@ void handle_uart_debug_cmd(void)
 	#endif
 		goto out;
 	}
+    ret=strncmp(uart_buf,"uart4_AT+CSQ",12);
+	if(ret==0)
+	{
+        ret = dx_get_lte_signalQuality();
+        printf("uart4 dx_get_lte_signal=%d\r\n",ret);
+		goto out;
+	}
 	//UARA1 FOR UART2 4G TEST
 	len = strlen(MODULE_4G_COMMAND_PREFIX);
 	//printf("MODULE_4G_COMMAND_PREFIX=%d\r\n",strlen(MODULE_4G_COMMAND_PREFIX));

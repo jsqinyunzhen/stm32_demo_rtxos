@@ -223,6 +223,7 @@ void audio_pa_io_init(void)
 
 //借用TIM4 在GPIOB 6 输出占空比XXXX，频率为32K波形(100K基础上计算)
 //借用TIM3 （16KZ）的中断 调整TIM4 输出的PWM 占空比
+//占空比= TIM_Pulse/(TIM_Period+1)
 void set_pwm_period_init_tim34(uint32_t fre)
 {
 	NVIC_InitTypeDef NVIC_InitStructure;

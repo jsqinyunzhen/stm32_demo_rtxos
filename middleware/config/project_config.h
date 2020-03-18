@@ -14,7 +14,7 @@
 
 
 
-#define  HWSERIAL_SOFTVERSION    0x313C
+#define  HWSERIAL_SOFTVERSION    0x313D
 
 #define  VER_PRO_NET         "1.0.1.12"
 
@@ -51,7 +51,7 @@ extern osTimerId_t timer_dma_pcm ;
 #define FLASH_VALID_JUDGE 0
 #define TIME_VALID_JUDGE 1
 
-#define DEAD_TIME "19/11/14,06:00:09+32"
+#define DEAD_TIME "99/11/14,06:00:09+32"
 //#define DEAD_TIME "19/09/04,06:00:09+32"
 #define STM_RTC_ENABLE 1
 //typedef uint32_t bool;
